@@ -5,13 +5,14 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaz.Menu;
 import java.util.Date;
 
 /**
  *
  * @author one
  */
-public final class Caballo extends Hervivero{
+public final class Caballo extends Hervivero implements Menu{
     private int codigo;
 
     public Caballo(String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
@@ -49,17 +50,16 @@ public final class Caballo extends Hervivero{
     
         System.out.println("peso");
     }
-
-    /*@Override
+    @Override
     public String imprimir() {
-       return "imprimiendo informacion de la clase auto";
+        return "imprimir datos de el caballo";
     }
 
     @Override
     public String modificar() {
-        return "modificando informacion de la clase auto";
-    }*/
-
+        return "madificar datos de el caballo";
+    }
+    
     @Override
     public String llamado() {
         return "llamado de la clase auto"; 

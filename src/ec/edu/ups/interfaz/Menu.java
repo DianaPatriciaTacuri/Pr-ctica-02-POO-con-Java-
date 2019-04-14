@@ -9,7 +9,11 @@ package ec.edu.ups.interfaz;
  *
  * @author one
  */
-public class Menu {
+public interface Menu {
+    
+    public abstract String imprimir();
+    
+    public abstract String modificar();
    
 
 }

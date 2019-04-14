@@ -5,13 +5,14 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaz.Menu;
 import java.util.Date;
 
 /**
  *
  * @author one
  */
-public final class Perro  extends Domestico{
+public final class Perro  extends Domestico implements Menu{
     private int codigo;
 
     public Perro(String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
@@ -50,15 +51,15 @@ public final class Perro  extends Domestico{
         System.out.println("edad de los perros");
     }
 
-    /*@Override
+    @Override
     public String imprimir() {
-       return "imprimiendo informacion de la clase auto";
+       return "imprimir datos del perro";
     }
 
     @Override
     public String modificar() {
-        return "modificando informacion de la clase auto";
-    }*/
+        return "modificar datos del perro";
+    }
 
     @Override
     public String llamado() {
