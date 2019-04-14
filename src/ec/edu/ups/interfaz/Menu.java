@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.ups.clases;
+package ec.edu.ups.interfaz;
 
 /**
  *
  * @author one
  */
-public class Ave {
-    
+public class Menu {
+   
+
 }

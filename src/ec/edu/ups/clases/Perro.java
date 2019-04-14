@@ -11,31 +11,30 @@ import java.util.Date;
  *
  * @author one
  */
-public class Gato extends Domestico{
-    private String codigo;
+public class Perro  extends Domestico{
+    private int codigo;
 
-    public Gato(String especie, Date fechaNac, int edad, String color) {
-        super(especie, fechaNac, edad, color);
+    public Perro(String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
+        super(nombre, peso, raza, pelaje, especie, fechaNac, edad, color);
     }
 
-    public Gato(String codigo, String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
+    public Perro(int codigo, String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
         super(nombre, peso, raza, pelaje, especie, fechaNac, edad, color);
         this.codigo = codigo;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
     @Override
     public String toString() {
-        return "Gato{" + "codigo=" + codigo + '}';
+        return "Perro{" + "codigo=" + codigo + '}';
     }
-    
     
     
     
