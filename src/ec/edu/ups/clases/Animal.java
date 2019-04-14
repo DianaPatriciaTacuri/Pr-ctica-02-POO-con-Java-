@@ -17,6 +17,8 @@ public class Animal {
     private int edad;
     private String color;
 
+    public Animal() {
+    }
     public Animal(String especie, Date fechaNac, int edad, String color) {
         this.especie = especie;
         this.fechaNac = fechaNac;
@@ -61,5 +63,18 @@ public class Animal {
         return "Animal{" + "especie=" + especie + ", fechaNac=" + fechaNac + ", edad=" + edad + ", color=" + color + '}';
     }
     
+     public void especies(){
     
+        System.out.println("especie de animales");
+    }
+    
+    public void edad(){
+    
+        System.out.println("edad de los animales");
+    }
+    
+    public void fechaNacimiento(){
+    
+        System.out.println("fecha de nacimiento de los animales ");
+    }
 }

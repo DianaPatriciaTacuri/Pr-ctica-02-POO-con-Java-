@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author one
  */
-public class Hervivero extends Animal{
+public abstract class Hervivero extends Animal{
     private String nombre;
     private int edad;
     private String pelaje;
@@ -66,6 +66,21 @@ public class Hervivero extends Animal{
         return "Hervivero{" + "nombre=" + nombre + ", edad=" + edad + ", pelaje=" + pelaje + ", peso=" + peso + '}';
     }
     
+     public void pelaje(){
     
+        System.out.println("pelajes de los animales");
+    }
+    
+    public void peso(){
+    
+        System.out.println("peso de los animales");
+    }
+    
+    public void nombre(){
+    
+        System.out.println("nombre de los animales");
+    }
+    
+    public abstract String llamado();
     
 }

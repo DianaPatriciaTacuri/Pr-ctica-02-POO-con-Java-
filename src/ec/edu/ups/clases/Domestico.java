@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author one
  */
-public class Domestico  extends Animal{
+public  abstract class Domestico  extends Animal{
     private String nombre;
     private double peso;
     private String raza;
@@ -66,7 +66,22 @@ public class Domestico  extends Animal{
         return "Domestico{" + "nombre=" + nombre + ", peso=" + peso + ", raza=" + raza + ", pelaje=" + pelaje + '}';
     }
 
+     public void nombres(){
     
+        System.out.println("nombre de los animales domesticos");
+    }
+    
+    public void pesos(){
+    
+        System.out.println("peso de los animales");
+    }
+    
+    public void Razas(){
+    
+        System.out.println("razas de los animales");
+    }
+    
+    public abstract String llamado();
     
     
     

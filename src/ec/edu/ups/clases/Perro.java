@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author one
  */
-public class Perro  extends Domestico{
+public final class Perro  extends Domestico{
     private int codigo;
 
     public Perro(String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
@@ -35,7 +35,35 @@ public class Perro  extends Domestico{
     public String toString() {
         return "Perro{" + "codigo=" + codigo + '}';
     }
+     public void razas(){
     
+        System.out.println("razas de los perros");
+    } 
+    
+    public void nombre(){
+    
+        System.out.println("nombre de los perros");
+    }
+    
+    public void edad(){
+    
+        System.out.println("edad de los perros");
+    }
+
+    /*@Override
+    public String imprimir() {
+       return "imprimiendo informacion de la clase auto";
+    }
+
+    @Override
+    public String modificar() {
+        return "modificando informacion de la clase auto";
+    }*/
+
+    @Override
+    public String llamado() {
+        return "llamado de la clase auto"; 
+    }
     
     
 }

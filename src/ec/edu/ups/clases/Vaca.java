@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author one
  */
-public class Vaca extends Hervivero{
+public final class Vaca extends Hervivero{
     private int codigo;
 
     public Vaca(String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
@@ -34,6 +34,35 @@ public class Vaca extends Hervivero{
     @Override
     public String toString() {
         return "Vaca{" + "codigo=" + codigo + '}';
+    }
+     public void pelaje(){
+    
+        System.out.println("pelaje de la vaca");
+    } 
+    
+    public void peso(){
+    
+        System.out.println("peso de la vaca");
+    }
+    
+    public void edad(){
+    
+        System.out.println("edad de la vaca");
+    }
+
+    /*@Override
+    public String imprimir() {
+       return "imprimiendo informacion de la clase auto";
+    }
+
+    @Override
+    public String modificar() {
+        return "modificando informacion de la clase auto";
+    }*/
+
+    @Override
+    public String llamado() {
+        return "llamado de la clase auto"; 
     }
     
     
