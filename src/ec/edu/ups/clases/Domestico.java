@@ -5,7 +5,6 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.Date;
 
 /**
  *
@@ -17,11 +16,16 @@ public  abstract class Domestico  extends Animal{
     private String raza;
     private String pelaje;
 
-    public Domestico(String especie, Date fechaNac, int edad, String color) {
+    public Domestico() {
+    }
+    
+    
+
+    public Domestico(String especie, String fechaNac, int edad, String color) {
         super(especie, fechaNac, edad, color);
     }
 
-    public Domestico(String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
+    public Domestico(String nombre, double peso, String raza, String pelaje, String especie, String fechaNac, int edad, String color) {
         super(especie, fechaNac, edad, color);
         this.nombre = nombre;
         this.peso = peso;
@@ -63,7 +67,7 @@ public  abstract class Domestico  extends Animal{
 
     @Override
     public String toString() {
-        return "Domestico{" + "nombre=" + nombre + ", peso=" + peso + ", raza=" + raza + ", pelaje=" + pelaje + '}';
+        return super.toString()+"Domestico{" + "nombre=" + nombre + ", peso=" + peso + ", raza=" + raza + ", pelaje=" + pelaje + '}';
     }
 
      public void nombres(){
@@ -81,7 +85,7 @@ public  abstract class Domestico  extends Animal{
         System.out.println("razas de los animales");
     }
     
-    public abstract String llamado();
+    public abstract String domesticos();
     
     
     

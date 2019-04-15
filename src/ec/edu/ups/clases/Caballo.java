@@ -15,11 +15,11 @@ import java.util.Date;
 public final class Caballo extends Hervivero implements Menu{
     private int codigo;
 
-    public Caballo(String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
+    public Caballo(String nombre, String pelaje, double peso, String especie, String fechaNac, int edad, String color) {
         super(nombre, pelaje, peso, especie, fechaNac, edad, color);
     }
 
-    public Caballo(int codigo, String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
+    public Caballo(int codigo, String nombre, String pelaje, double peso, String especie, String fechaNac, int edad, String color) {
         super(nombre, pelaje, peso, especie, fechaNac, edad, color);
         this.codigo = codigo;
     }
@@ -34,7 +34,7 @@ public final class Caballo extends Hervivero implements Menu{
 
     @Override
     public String toString() {
-        return "Caballo{" + "codigo=" + codigo + '}';
+        return "Caballo{" + "codigo=" + codigo + '}'+super.toString();
     }
      public void codigos(){
     
@@ -59,11 +59,13 @@ public final class Caballo extends Hervivero implements Menu{
     public String modificar() {
         return "madificar datos de el caballo";
     }
-    
+
     @Override
-    public String llamado() {
-        return "llamado de la clase auto"; 
+    public String Herviveros() {
+        return "clase herviveros";
     }
+    
+   
     
     
     

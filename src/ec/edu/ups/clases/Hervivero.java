@@ -17,11 +17,16 @@ public abstract class Hervivero extends Animal{
     private String pelaje;
     private double peso;
 
-    public Hervivero(String especie, Date fechaNac, int edad, String color) {
+    public Hervivero() {
+    }
+    
+    
+
+    public Hervivero(String especie, String fechaNac, int edad, String color) {
         super(especie, fechaNac, edad, color);
     }
 
-    public Hervivero(String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
+    public Hervivero(String nombre, String pelaje, double peso, String especie, String fechaNac, int edad, String color) {
         super(especie, fechaNac, edad, color);
         this.nombre = nombre;
         this.edad = edad;
@@ -63,7 +68,7 @@ public abstract class Hervivero extends Animal{
 
     @Override
     public String toString() {
-        return "Hervivero{" + "nombre=" + nombre + ", edad=" + edad + ", pelaje=" + pelaje + ", peso=" + peso + '}';
+        return super.toString()+"Hervivero{" + "nombre=" + nombre + ", edad=" + edad + ", pelaje=" + pelaje + ", peso=" + peso + '}';
     }
     
      public void pelaje(){
@@ -81,6 +86,6 @@ public abstract class Hervivero extends Animal{
         System.out.println("nombre de los animales");
     }
     
-    public abstract String llamado();
+    public abstract String Herviveros();
     
 }

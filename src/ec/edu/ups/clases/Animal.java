@@ -5,21 +5,19 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.Date;
-
 /**
  *
  * @author one
  */
 public class Animal {
     private String especie;
-    private Date fechaNac;
+    private String fechaNac;
     private int edad;
     private String color;
 
     public Animal() {
     }
-    public Animal(String especie, Date fechaNac, int edad, String color) {
+    public Animal(String especie, String fechaNac, int edad, String color) {
         this.especie = especie;
         this.fechaNac = fechaNac;
         this.edad = edad;
@@ -34,11 +32,11 @@ public class Animal {
         this.especie = especie;
     }
 
-    public Date getFechaNac() {
+    public String getFechaNac() {
         return fechaNac;
     }
 
-    public void setFechaNac(Date fechaNac) {
+    public void setFechaNac(String fechaNac) {
         this.fechaNac = fechaNac;
     }
 

@@ -15,11 +15,11 @@ import java.util.Date;
 public final class Vaca extends Hervivero implements Menu{
     private int codigo;
 
-    public Vaca(String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
+    public Vaca(String nombre, String pelaje, double peso, String especie, String fechaNac, int edad, String color) {
         super(nombre, pelaje, peso, especie, fechaNac, edad, color);
     }
 
-    public Vaca(int codigo, String nombre, String pelaje, double peso, String especie, Date fechaNac, int edad, String color) {
+    public Vaca(int codigo, String nombre, String pelaje, double peso, String especie, String fechaNac, int edad, String color) {
         super(nombre, pelaje, peso, especie, fechaNac, edad, color);
         this.codigo = codigo;
     }
@@ -34,7 +34,7 @@ public final class Vaca extends Hervivero implements Menu{
 
     @Override
     public String toString() {
-        return "Vaca{" + "codigo=" + codigo + '}';
+        return "Vaca{" + "codigo=" + codigo + '}'+super.toString();
     }
      public void pelaje(){
     
@@ -62,8 +62,8 @@ public final class Vaca extends Hervivero implements Menu{
     }
 
     @Override
-    public String llamado() {
-        return "llamado de la clase auto"; 
+    public String Herviveros() {
+        return "clase herviveros";
     }
     
     

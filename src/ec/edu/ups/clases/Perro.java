@@ -15,11 +15,11 @@ import java.util.Date;
 public final class Perro  extends Domestico implements Menu{
     private int codigo;
 
-    public Perro(String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
+    public Perro(String nombre, double peso, String raza, String pelaje, String especie, String fechaNac, int edad, String color) {
         super(nombre, peso, raza, pelaje, especie, fechaNac, edad, color);
     }
 
-    public Perro(int codigo, String nombre, double peso, String raza, String pelaje, String especie, Date fechaNac, int edad, String color) {
+    public Perro(int codigo, String nombre, double peso, String raza, String pelaje, String especie, String fechaNac, int edad, String color) {
         super(nombre, peso, raza, pelaje, especie, fechaNac, edad, color);
         this.codigo = codigo;
     }
@@ -34,7 +34,7 @@ public final class Perro  extends Domestico implements Menu{
 
     @Override
     public String toString() {
-        return "Perro{" + "codigo=" + codigo + '}';
+        return "Perro{" + "codigo=" + codigo + '}'+super.toString();
     }
      public void razas(){
     
@@ -62,9 +62,11 @@ public final class Perro  extends Domestico implements Menu{
     }
 
     @Override
-    public String llamado() {
-        return "llamado de la clase auto"; 
+    public String domesticos() {
+        return "clase domesticos";
     }
+
+   
     
     
 }
